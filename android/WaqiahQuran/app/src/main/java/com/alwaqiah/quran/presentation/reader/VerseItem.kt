@@ -18,6 +18,9 @@ import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Bookmark
 import androidx.compose.material.icons.filled.BookmarkBorder
 import androidx.compose.material.icons.filled.ContentCopy
+import androidx.compose.material.icons.filled.PlayArrow
+import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.material.icons.filled.Share
 import androidx.compose.material3.AssistChip
 import androidx.compose.material3.HorizontalDivider
@@ -47,9 +50,12 @@ import com.alwaqiah.quran.presentation.theme.fontFamily
 fun VerseItem(
     item: ReaderVerse,
     selected: Boolean,
+    isActive: Boolean,
     script: ArabicScript,
     arabicFontSizeSp: Float,
+    lineSpacing: Float,
     onClick: () -> Unit,
+    onPlayFrom: () -> Unit,
     onToggleBookmark: () -> Unit,
     onCopy: () -> Unit,
     onShare: () -> Unit,
@@ -58,13 +64,17 @@ fun VerseItem(
     val number = item.verse.number
     val extra = WaqiahThemeExtras.colors
     val container by animateColorAsState(
-        if (selected) extra.verseHighlight else MaterialTheme.colorScheme.surface,
+        when {
+            isActive -> MaterialTheme.colorScheme.primaryContainer.copy(alpha = 0.55f)
+            selected -> extra.verseHighlight
+            else -> MaterialTheme.colorScheme.surface
+        },
         label = "verse-bg",
     )
     val arabicStyle = TextStyle(
         fontFamily = script.fontFamily(),
         fontSize = arabicFontSizeSp.sp,
-        lineHeight = (arabicFontSizeSp * 1.9f).sp,
+        lineHeight = (arabicFontSizeSp * lineSpacing).sp,
         textDirection = TextDirection.Rtl,
         textAlign = TextAlign.Start,
         color = MaterialTheme.colorScheme.onSurface,
@@ -75,7 +85,11 @@ fun VerseItem(
         modifier = modifier.fillMaxWidth().testTag("verse-item-$number"),
         shape = MaterialTheme.shapes.large,
         color = container,
-        border = if (selected) BorderStroke(1.dp, extra.gold) else null,
+        border = when {
+            isActive -> BorderStroke(1.5.dp, MaterialTheme.colorScheme.primary)
+            selected -> BorderStroke(1.dp, extra.gold)
+            else -> null
+        },
     ) {
         Column(Modifier.padding(16.dp), verticalArrangement = Arrangement.spacedBy(12.dp)) {
             Row {
@@ -121,7 +135,16 @@ fun VerseItem(
             ) {
                 Column(verticalArrangement = Arrangement.spacedBy(8.dp)) {
                     HorizontalDivider(color = extra.gold.copy(alpha = 0.4f))
-                    Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                    Row(
+                        horizontalArrangement = Arrangement.spacedBy(8.dp),
+                        modifier = Modifier.horizontalScroll(rememberScrollState()),
+                    ) {
+                        VerseAction(
+                            label = stringResource(R.string.action_play_from),
+                            icon = { Icon(Icons.Filled.PlayArrow, null, Modifier.size(18.dp)) },
+                            onClick = onPlayFrom,
+                            tag = "verse-action-play-$number",
+                        )
                         VerseAction(
                             label = stringResource(if (item.isBookmarked) R.string.action_unbookmark else R.string.action_bookmark),
                             icon = { Icon(if (item.isBookmarked) Icons.Filled.Bookmark else Icons.Filled.BookmarkBorder, null, Modifier.size(18.dp)) },

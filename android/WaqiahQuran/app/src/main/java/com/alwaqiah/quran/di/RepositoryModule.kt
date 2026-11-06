@@ -23,4 +23,10 @@ abstract class RepositoryModule {
     @Binds abstract fun bindBookmarkRepository(impl: BookmarkRepositoryImpl): BookmarkRepository
     @Binds abstract fun bindHistoryRepository(impl: ReadingHistoryRepositoryImpl): ReadingHistoryRepository
     @Binds abstract fun bindPreferencesRepository(impl: UserPreferencesRepositoryImpl): UserPreferencesRepository
+    @Binds abstract fun bindDownloadRepository(
+        impl: com.alwaqiah.quran.data.download.AudioDownloadRepositoryImpl,
+    ): com.alwaqiah.quran.domain.repository.AudioDownloadRepository
+    @Binds abstract fun bindMemorizationRepository(
+        impl: com.alwaqiah.quran.data.repository.MemorizationRepositoryImpl,
+    ): com.alwaqiah.quran.domain.memorization.MemorizationRepository
 }

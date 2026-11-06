@@ -4,6 +4,8 @@ import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.toRoute
+import com.alwaqiah.quran.audio.AudioEngine
+import com.alwaqiah.quran.domain.playback.PlaybackState
 import com.alwaqiah.quran.domain.model.ReaderVerse
 import com.alwaqiah.quran.domain.model.SurahInfo
 import com.alwaqiah.quran.domain.model.UserPreferences
@@ -53,7 +55,26 @@ class ReaderViewModel @Inject constructor(
     private val bookmarkRepository: BookmarkRepository,
     private val historyRepository: ReadingHistoryRepository,
     preferencesRepository: UserPreferencesRepository,
+    private val audioEngine: AudioEngine,
 ) : ViewModel() {
+
+    val playback: StateFlow<PlaybackState> = audioEngine.state
+
+    /** Verse being recited, or null when no audio is loaded. Distinct so only 2 items recompose per change. */
+    val activeVerse: StateFlow<Int?> = audioEngine.state
+        .map { if (it.isLoaded) it.currentVerse else null }
+        .distinctUntilChanged()
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
+    fun playFrom(verse: Int) {
+        viewModelScope.launch { runCatching { audioEngine.playFrom(verse) } }
+    }
+
+    fun togglePlay() {
+        viewModelScope.launch { runCatching { audioEngine.togglePlayPause() } }
+    }
+
+    fun nextVerse() = audioEngine.nextVerse()
 
     /** Verse to scroll to on first load (0 = top of surah). */
     val startVerse: Int = savedStateHandle.toRoute<ReaderRoute>().startVerse

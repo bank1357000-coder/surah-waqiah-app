@@ -19,6 +19,8 @@ import com.alwaqiah.quran.presentation.bookmarks.BookmarksScreen
 import com.alwaqiah.quran.presentation.common.ComingSoonScreen
 import com.alwaqiah.quran.presentation.home.HomeScreen
 import com.alwaqiah.quran.presentation.info.SurahInfoScreen
+import com.alwaqiah.quran.presentation.memorization.MemorizationScreen
+import com.alwaqiah.quran.presentation.player.PlayerScreen
 import com.alwaqiah.quran.presentation.reader.ReaderScreen
 import com.alwaqiah.quran.presentation.settings.SettingsScreen
 
@@ -35,7 +37,9 @@ fun WaqiahNavHost(navController: NavHostController = rememberNavController()) {
         popExitTransition = { fadeOut(tween(160)) + slideOutHorizontally(tween(240)) { -it / 10 } },
     ) {
         composable<HomeRoute> { HomeScreen(onNavigate = { route -> navController.navigate(route) }) }
-        composable<ReaderRoute> { ReaderScreen(onBack = back) }
+        composable<ReaderRoute> {
+            ReaderScreen(onBack = back, onOpenPlayer = { navController.navigate(PlayerRoute) { launchSingleTop = true } })
+        }
         composable<BookmarksRoute> {
             BookmarksScreen(onBack = back, onOpenVerse = { navController.navigate(ReaderRoute(startVerse = it)) })
         }
@@ -46,21 +50,12 @@ fun WaqiahNavHost(navController: NavHostController = rememberNavController()) {
         composable<OtherAppsRoute> { OtherAppsScreen(onBack = back) }
 
         composable<PlayerRoute> {
-            ComingSoonScreen(
-                title = stringResource(R.string.feature_player),
-                phase = stringResource(R.string.phase_2),
-                description = stringResource(R.string.coming_soon_player),
+            PlayerScreen(
                 onBack = back,
+                onOpenReader = { verse -> navController.navigate(ReaderRoute(startVerse = verse)) { launchSingleTop = true } },
             )
         }
-        composable<MemorizationRoute> {
-            ComingSoonScreen(
-                title = stringResource(R.string.feature_memorization),
-                phase = stringResource(R.string.phase_3),
-                description = stringResource(R.string.coming_soon_memorization),
-                onBack = back,
-            )
-        }
+        composable<MemorizationRoute> { MemorizationScreen(onBack = back) }
         composable<TafsirRoute> {
             ComingSoonScreen(
                 title = stringResource(R.string.feature_tafsir),

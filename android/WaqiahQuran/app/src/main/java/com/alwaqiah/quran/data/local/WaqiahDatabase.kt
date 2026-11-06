@@ -9,6 +9,7 @@ import com.alwaqiah.quran.data.local.dao.QuranDao
 import com.alwaqiah.quran.data.local.dao.ReadingHistoryDao
 import com.alwaqiah.quran.data.local.dao.ReciterDao
 import com.alwaqiah.quran.data.local.entity.BookmarkEntity
+import com.alwaqiah.quran.data.local.entity.MemorizationActivityEntity
 import com.alwaqiah.quran.data.local.entity.MemorizationProgressEntity
 import com.alwaqiah.quran.data.local.entity.NoteEntity
 import com.alwaqiah.quran.data.local.entity.ReadingHistoryEntity
@@ -33,6 +34,7 @@ import com.alwaqiah.quran.data.local.entity.VerseTranslationEntity
         NoteEntity::class,
         MemorizationProgressEntity::class,
         ReadingHistoryEntity::class,
+        MemorizationActivityEntity::class,
     ],
     version = WaqiahDatabase.VERSION,
     exportSchema = true,
@@ -46,7 +48,7 @@ abstract class WaqiahDatabase : RoomDatabase() {
     abstract fun readingHistoryDao(): ReadingHistoryDao
 
     companion object {
-        const val VERSION = 1
+        const val VERSION = 2
         const val NAME = "waqiah.db"
     }
 }

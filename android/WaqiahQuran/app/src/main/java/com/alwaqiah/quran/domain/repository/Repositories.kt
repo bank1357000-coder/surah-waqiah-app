@@ -10,6 +10,8 @@ import com.alwaqiah.quran.domain.model.TranslationEdition
 import com.alwaqiah.quran.domain.model.UserPreferences
 import com.alwaqiah.quran.domain.model.Verse
 import com.alwaqiah.quran.domain.model.VerseTiming
+import com.alwaqiah.quran.domain.model.DownloadStatus
+import com.alwaqiah.quran.domain.playback.RepeatSettings
 import kotlinx.coroutines.flow.Flow
 
 interface QuranRepository {
@@ -53,4 +55,18 @@ interface UserPreferencesRepository {
     suspend fun setHapticFeedback(enabled: Boolean)
     suspend fun setNotificationsEnabled(enabled: Boolean)
     suspend fun setDownloadOnWifiOnly(enabled: Boolean)
+    suspend fun setArabicLineSpacing(multiplier: Float)
+    suspend fun setRepeatSettings(settings: RepeatSettings)
+    suspend fun setLastPlayedVerse(verse: Int)
+}
+
+/** Offline audio downloads. Files live in app storage; Room only keeps the path. */
+interface AudioDownloadRepository {
+    fun observeStatuses(): Flow<Map<Int, DownloadStatus>>
+    fun observeStorageUsageBytes(): Flow<Long>
+    suspend fun start(reciterId: Int)
+    /** Stops the transfer but keeps the partial file so it can resume. */
+    fun pause(reciterId: Int)
+    suspend fun cancel(reciterId: Int)
+    suspend fun delete(reciterId: Int)
 }

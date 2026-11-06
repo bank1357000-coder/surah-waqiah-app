@@ -13,6 +13,7 @@ import androidx.datastore.preferences.core.stringPreferencesKey
 import com.alwaqiah.quran.domain.model.ArabicScript
 import com.alwaqiah.quran.domain.model.ThemeMode
 import com.alwaqiah.quran.domain.model.UserPreferences
+import com.alwaqiah.quran.domain.playback.RepeatSettings
 import com.alwaqiah.quran.domain.repository.UserPreferencesRepository
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.catch
@@ -42,6 +43,13 @@ class UserPreferencesRepositoryImpl @Inject constructor(
         val HAPTICS = booleanPreferencesKey("haptic_feedback")
         val NOTIFICATIONS = booleanPreferencesKey("notifications")
         val WIFI_ONLY = booleanPreferencesKey("download_wifi_only")
+        val LINE_SPACING = floatPreferencesKey("arabic_line_spacing")
+        val REPEAT_SCOPE = stringPreferencesKey("repeat_scope")
+        val RANGE_START = intPreferencesKey("range_start")
+        val RANGE_END = intPreferencesKey("range_end")
+        val RANGE_REPEAT = intPreferencesKey("range_repeat_count")
+        val CONTINUE_RANGE = booleanPreferencesKey("continue_to_next_range")
+        val LAST_VERSE = intPreferencesKey("last_played_verse")
     }
 
     override val preferences: Flow<UserPreferences> = dataStore.data
@@ -67,6 +75,13 @@ class UserPreferencesRepositoryImpl @Inject constructor(
             hapticFeedback = this[Keys.HAPTICS] ?: d.hapticFeedback,
             notificationsEnabled = this[Keys.NOTIFICATIONS] ?: d.notificationsEnabled,
             downloadOnWifiOnly = this[Keys.WIFI_ONLY] ?: d.downloadOnWifiOnly,
+            arabicLineSpacing = this[Keys.LINE_SPACING] ?: d.arabicLineSpacing,
+            repeatScope = enumOrDefault(this[Keys.REPEAT_SCOPE], d.repeatScope),
+            rangeStart = this[Keys.RANGE_START] ?: d.rangeStart,
+            rangeEnd = this[Keys.RANGE_END] ?: d.rangeEnd,
+            rangeRepeatCount = this[Keys.RANGE_REPEAT] ?: d.rangeRepeatCount,
+            continueToNextRange = this[Keys.CONTINUE_RANGE] ?: d.continueToNextRange,
+            lastPlayedVerse = this[Keys.LAST_VERSE] ?: d.lastPlayedVerse,
         )
     }
 
@@ -110,4 +125,21 @@ class UserPreferencesRepositoryImpl @Inject constructor(
     override suspend fun setNotificationsEnabled(enabled: Boolean) = update { it[Keys.NOTIFICATIONS] = enabled }
 
     override suspend fun setDownloadOnWifiOnly(enabled: Boolean) = update { it[Keys.WIFI_ONLY] = enabled }
+
+    override suspend fun setArabicLineSpacing(multiplier: Float) = update {
+        it[Keys.LINE_SPACING] = multiplier.coerceIn(1.4f, 2.6f)
+    }
+
+    override suspend fun setRepeatSettings(settings: RepeatSettings) = update {
+        val s = settings.normalized()
+        it[Keys.REPEAT_SCOPE] = s.scope.name
+        it[Keys.REPEAT_COUNT] = s.verseRepeatCount
+        it[Keys.RANGE_START] = s.rangeStart
+        it[Keys.RANGE_END] = s.rangeEnd
+        it[Keys.RANGE_REPEAT] = s.rangeRepeatCount
+        it[Keys.PAUSE_MS] = s.pauseBetweenRepeatsMs
+        it[Keys.CONTINUE_RANGE] = s.continueToNextRange
+    }
+
+    override suspend fun setLastPlayedVerse(verse: Int) = update { it[Keys.LAST_VERSE] = verse }
 }

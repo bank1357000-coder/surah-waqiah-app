@@ -6,6 +6,7 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Upsert
 import com.alwaqiah.quran.data.local.entity.BookmarkEntity
+import com.alwaqiah.quran.data.local.entity.MemorizationActivityEntity
 import com.alwaqiah.quran.data.local.entity.MemorizationProgressEntity
 import com.alwaqiah.quran.data.local.entity.NoteEntity
 import com.alwaqiah.quran.data.local.entity.ReadingHistoryEntity
@@ -46,6 +47,20 @@ interface MemorizationDao {
     fun observeAll(): Flow<List<MemorizationProgressEntity>>
 
     @Upsert suspend fun upsert(progress: MemorizationProgressEntity)
+
+    @Query("SELECT * FROM memorization_progress WHERE verseNumber = :verse LIMIT 1")
+    suspend fun get(verse: Int): MemorizationProgressEntity?
+
+    @Query("SELECT * FROM memorization_activity WHERE date = :date LIMIT 1")
+    suspend fun activity(date: String): MemorizationActivityEntity?
+
+    @Query("SELECT * FROM memorization_activity WHERE date = :date LIMIT 1")
+    fun observeActivity(date: String): Flow<MemorizationActivityEntity?>
+
+    @Query("SELECT * FROM memorization_activity ORDER BY date DESC LIMIT :limit")
+    fun observeRecentActivity(limit: Int): Flow<List<MemorizationActivityEntity>>
+
+    @Upsert suspend fun upsertActivity(activity: MemorizationActivityEntity)
 }
 
 @Dao

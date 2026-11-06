@@ -51,6 +51,7 @@ class SettingsViewModel @Inject constructor(
 
     fun setTheme(mode: ThemeMode) = save { this.setThemeMode(mode) }
     fun setFontSize(size: Float) = save { this.setArabicFontSize(size) }
+    fun setLineSpacing(multiplier: Float) = save { this.setArabicLineSpacing(multiplier) }
     fun setScript(script: ArabicScript) = save { this.setArabicScript(script) }
     fun setTranslation(id: String) = save { this.setPrimaryTranslation(id) }
     fun setShowEnglish(show: Boolean) = save { this.setShowEnglishTranslation(show) }

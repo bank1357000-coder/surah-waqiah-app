@@ -42,6 +42,7 @@ import com.alwaqiah.quran.domain.model.ArabicScript
 import com.alwaqiah.quran.presentation.components.ErrorState
 import com.alwaqiah.quran.presentation.components.LoadingState
 import com.alwaqiah.quran.presentation.components.WaqiahTopBar
+import com.alwaqiah.quran.presentation.player.MiniPlayerBar
 import com.alwaqiah.quran.presentation.theme.WaqiahThemeExtras
 import com.alwaqiah.quran.presentation.theme.fontFamily
 import kotlinx.coroutines.FlowPreview
@@ -53,9 +54,11 @@ import kotlinx.coroutines.launch
 
 @OptIn(FlowPreview::class)
 @Composable
-fun ReaderScreen(onBack: () -> Unit, viewModel: ReaderViewModel = hiltViewModel()) {
+fun ReaderScreen(onBack: () -> Unit, onOpenPlayer: () -> Unit, viewModel: ReaderViewModel = hiltViewModel()) {
     val state by viewModel.uiState.collectAsStateWithLifecycle()
     val selected by viewModel.selectedVerse.collectAsStateWithLifecycle()
+    val activeVerse by viewModel.activeVerse.collectAsStateWithLifecycle()
+    val playback by viewModel.playback.collectAsStateWithLifecycle()
 
     val context = LocalContext.current
     val clipboard = LocalClipboardManager.current
@@ -82,6 +85,11 @@ fun ReaderScreen(onBack: () -> Unit, viewModel: ReaderViewModel = hiltViewModel(
     Scaffold(
         topBar = { WaqiahTopBar(title = title, onBack = onBack) },
         snackbarHost = { SnackbarHost(snackbar) },
+        bottomBar = {
+            if (playback.isLoaded) {
+                MiniPlayerBar(playback, onToggle = viewModel::togglePlay, onNext = viewModel::nextVerse, onOpen = onOpenPlayer)
+            }
+        },
         containerColor = MaterialTheme.colorScheme.background,
     ) { padding ->
         when (val s = state) {
@@ -95,6 +103,16 @@ fun ReaderScreen(onBack: () -> Unit, viewModel: ReaderViewModel = hiltViewModel(
                     initialScrollDone = true
                 }
                 val prefs = s.preferences
+                // Follow the recited verse unless disabled or the user is currently scrolling.
+                LaunchedEffect(activeVerse, prefs.autoScroll) {
+                    val verse = activeVerse ?: return@LaunchedEffect
+                    if (!prefs.autoScroll || listState.isScrollInProgress) return@LaunchedEffect
+                    val info = listState.layoutInfo
+                    val item = info.visibleItemsInfo.firstOrNull { it.index == verse }
+                    val fullyVisible = item != null && item.offset >= info.viewportStartOffset &&
+                        item.offset + item.size <= info.viewportEndOffset
+                    if (!fullyVisible) listState.animateScrollToItem(verse)
+                }
                 LazyColumn(
                     state = listState,
                     modifier = Modifier.fillMaxSize().padding(top = padding.calculateTopPadding()).testTag("reader-verse-list"),
@@ -119,8 +137,11 @@ fun ReaderScreen(onBack: () -> Unit, viewModel: ReaderViewModel = hiltViewModel(
                         VerseItem(
                             item = item,
                             selected = selected == number,
+                            isActive = activeVerse == number,
                             script = prefs.arabicScript,
                             arabicFontSizeSp = prefs.arabicFontSizeSp,
+                            lineSpacing = prefs.arabicLineSpacing,
+                            onPlayFrom = { viewModel.playFrom(number) },
                             onClick = {
                                 if (prefs.hapticFeedback) haptics.performHapticFeedback(HapticFeedbackType.TextHandleMove)
                                 viewModel.onVerseTapped(number)

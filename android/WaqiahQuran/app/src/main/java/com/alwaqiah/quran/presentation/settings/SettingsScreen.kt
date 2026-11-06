@@ -108,6 +108,7 @@ fun SettingsScreen(onBack: () -> Unit, viewModel: SettingsViewModel = hiltViewMo
                 FontSizeSlider(p, state.previewVerse?.let {
                     if (p.arabicScript == ArabicScript.HAFS_KFGQPC) it.textHafs else it.textTanzil
                 }, onCommit = viewModel::setFontSize)
+                LineSpacingSlider(p.arabicLineSpacing, viewModel::setLineSpacing)
             }
 
             SettingsSection(stringResource(R.string.settings_section_translation)) {
@@ -214,6 +215,20 @@ private fun FontSizeSlider(p: UserPreferences, previewText: String?, onCommit: (
             modifier = Modifier.fillMaxWidth().testTag("settings-font-preview"),
         )
     }
+}
+
+@Composable
+private fun LineSpacingSlider(spacing: Float, onCommit: (Float) -> Unit) {
+    var value by remember(spacing) { mutableFloatStateOf(spacing) }
+    Label(stringResource(R.string.settings_line_spacing) + " — " + String.format(Locale.US, "%.1f", value).toPersianDigits())
+    Slider(
+        value = value,
+        onValueChange = { value = it },
+        onValueChangeFinished = { onCommit(value) },
+        valueRange = 1.4f..2.6f,
+        steps = 11,
+        modifier = Modifier.testTag("settings-line-spacing-slider"),
+    )
 }
 
 private fun Float.formatSpeed(): String = String.format(Locale.US, "%.2f×", this).toPersianDigits()

@@ -36,3 +36,12 @@ data class ReadingHistoryEntity(
     val verseNumber: Int,
     val visitedAt: Long,
 )
+
+/** One row per local day (yyyy-MM-dd). Added in DB version 2. */
+@Entity(tableName = "memorization_activity")
+data class MemorizationActivityEntity(
+    @PrimaryKey val date: String,
+    val versesPracticed: Int,
+    val repetitions: Int,
+    val newlyMemorized: Int,
+)

@@ -15,6 +15,9 @@ interface ReciterDao {
     @Query("SELECT * FROM reciters ORDER BY nameFa")
     fun observeReciters(): Flow<List<ReciterEntity>>
 
+    @Query("SELECT * FROM reciters WHERE id = :id LIMIT 1")
+    suspend fun getReciter(id: Int): ReciterEntity?
+
     @Query("SELECT * FROM verse_timings WHERE reciterId = :reciterId ORDER BY verseNumber")
     suspend fun getTimings(reciterId: Int): List<VerseTimingEntity>
 

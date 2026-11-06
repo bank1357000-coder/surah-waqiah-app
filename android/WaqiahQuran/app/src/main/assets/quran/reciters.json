@@ -1,0 +1,2454 @@
+{
+ "reciters": [
+  {
+   "id": 7,
+   "nameFa": "مشاری راشد العفاسی",
+   "nameEn": "Mishari Rashid al-Afasy",
+   "style": "murattal",
+   "audioUrl": "https://download.quranicaudio.com/qdc/mishari_al_afasy/murattal/56.mp3",
+   "timingSource": "Quran.com / Quran Foundation QDC API: /api/qdc/audio/reciters/7/audio_files?chapter=56&segments=true",
+   "timings": [
+    {
+     "verse": 1,
+     "fromMs": 0,
+     "toMs": 3550
+    },
+    {
+     "verse": 2,
+     "fromMs": 3550,
+     "toMs": 7680
+    },
+    {
+     "verse": 3,
+     "fromMs": 7680,
+     "toMs": 10920
+    },
+    {
+     "verse": 4,
+     "fromMs": 10920,
+     "toMs": 15050
+    },
+    {
+     "verse": 5,
+     "fromMs": 15050,
+     "toMs": 19050
+    },
+    {
+     "verse": 6,
+     "fromMs": 19050,
+     "toMs": 26420
+    },
+    {
+     "verse": 7,
+     "fromMs": 26420,
+     "toMs": 32430
+    },
+    {
+     "verse": 8,
+     "fromMs": 32430,
+     "toMs": 40060
+    },
+    {
+     "verse": 9,
+     "fromMs": 40060,
+     "toMs": 48030
+    },
+    {
+     "verse": 10,
+     "fromMs": 48030,
+     "toMs": 54040
+    },
+    {
+     "verse": 11,
+     "fromMs": 54040,
+     "toMs": 60780
+    },
+    {
+     "verse": 12,
+     "fromMs": 60780,
+     "toMs": 67520
+    },
+    {
+     "verse": 13,
+     "fromMs": 67520,
+     "toMs": 73760
+    },
+    {
+     "verse": 14,
+     "fromMs": 73760,
+     "toMs": 80530
+    },
+    {
+     "verse": 15,
+     "fromMs": 80530,
+     "toMs": 84810
+    },
+    {
+     "verse": 16,
+     "fromMs": 84810,
+     "toMs": 91810
+    },
+    {
+     "verse": 17,
+     "fromMs": 91810,
+     "toMs": 99910
+    },
+    {
+     "verse": 18,
+     "fromMs": 99910,
+     "toMs": 110250
+    },
+    {
+     "verse": 19,
+     "fromMs": 110250,
+     "toMs": 118530
+    },
+    {
+     "verse": 20,
+     "fromMs": 118530,
+     "toMs": 126810
+    },
+    {
+     "verse": 21,
+     "fromMs": 126810,
+     "toMs": 135300
+    },
+    {
+     "verse": 22,
+     "fromMs": 135300,
+     "toMs": 139690
+    },
+    {
+     "verse": 23,
+     "fromMs": 139690,
+     "toMs": 145910
+    },
+    {
+     "verse": 24,
+     "fromMs": 145910,
+     "toMs": 154900
+    },
+    {
+     "verse": 25,
+     "fromMs": 154900,
+     "toMs": 162370
+    },
+    {
+     "verse": 26,
+     "fromMs": 162370,
+     "toMs": 168820
+    },
+    {
+     "verse": 27,
+     "fromMs": 168820,
+     "toMs": 177860
+    },
+    {
+     "verse": 28,
+     "fromMs": 177860,
+     "toMs": 183320
+    },
+    {
+     "verse": 29,
+     "fromMs": 183320,
+     "toMs": 189040
+    },
+    {
+     "verse": 30,
+     "fromMs": 189040,
+     "toMs": 194470
+    },
+    {
+     "verse": 31,
+     "fromMs": 194470,
+     "toMs": 201290
+    },
+    {
+     "verse": 32,
+     "fromMs": 201290,
+     "toMs": 205470
+    },
+    {
+     "verse": 33,
+     "fromMs": 205470,
+     "toMs": 210690
+    },
+    {
+     "verse": 34,
+     "fromMs": 210690,
+     "toMs": 214270
+    },
+    {
+     "verse": 35,
+     "fromMs": 214270,
+     "toMs": 225450
+    },
+    {
+     "verse": 36,
+     "fromMs": 225450,
+     "toMs": 230390
+    },
+    {
+     "verse": 37,
+     "fromMs": 230390,
+     "toMs": 233370
+    },
+    {
+     "verse": 38,
+     "fromMs": 233370,
+     "toMs": 238020
+    },
+    {
+     "verse": 39,
+     "fromMs": 238020,
+     "toMs": 244000
+    },
+    {
+     "verse": 40,
+     "fromMs": 244000,
+     "toMs": 250400
+    },
+    {
+     "verse": 41,
+     "fromMs": 250400,
+     "toMs": 259230
+    },
+    {
+     "verse": 42,
+     "fromMs": 259230,
+     "toMs": 265290
+    },
+    {
+     "verse": 43,
+     "fromMs": 265290,
+     "toMs": 271380
+    },
+    {
+     "verse": 44,
+     "fromMs": 271380,
+     "toMs": 277810
+    },
+    {
+     "verse": 45,
+     "fromMs": 277810,
+     "toMs": 285990
+    },
+    {
+     "verse": 46,
+     "fromMs": 285990,
+     "toMs": 294110
+    },
+    {
+     "verse": 47,
+     "fromMs": 294110,
+     "toMs": 309340
+    },
+    {
+     "verse": 48,
+     "fromMs": 309340,
+     "toMs": 316210
+    },
+    {
+     "verse": 49,
+     "fromMs": 316210,
+     "toMs": 323730
+    },
+    {
+     "verse": 50,
+     "fromMs": 323730,
+     "toMs": 332980
+    },
+    {
+     "verse": 51,
+     "fromMs": 332980,
+     "toMs": 345680
+    },
+    {
+     "verse": 52,
+     "fromMs": 345680,
+     "toMs": 355500
+    },
+    {
+     "verse": 53,
+     "fromMs": 355500,
+     "toMs": 361250
+    },
+    {
+     "verse": 54,
+     "fromMs": 361250,
+     "toMs": 367990
+    },
+    {
+     "verse": 55,
+     "fromMs": 367990,
+     "toMs": 373760
+    },
+    {
+     "verse": 56,
+     "fromMs": 373760,
+     "toMs": 379900
+    },
+    {
+     "verse": 57,
+     "fromMs": 379900,
+     "toMs": 387320
+    },
+    {
+     "verse": 58,
+     "fromMs": 387320,
+     "toMs": 393880
+    },
+    {
+     "verse": 59,
+     "fromMs": 393880,
+     "toMs": 403780
+    },
+    {
+     "verse": 60,
+     "fromMs": 403780,
+     "toMs": 413290
+    },
+    {
+     "verse": 61,
+     "fromMs": 413290,
+     "toMs": 426590
+    },
+    {
+     "verse": 62,
+     "fromMs": 426590,
+     "toMs": 436230
+    },
+    {
+     "verse": 63,
+     "fromMs": 436230,
+     "toMs": 443150
+    },
+    {
+     "verse": 64,
+     "fromMs": 443150,
+     "toMs": 452870
+    },
+    {
+     "verse": 65,
+     "fromMs": 452870,
+     "toMs": 464760
+    },
+    {
+     "verse": 66,
+     "fromMs": 464760,
+     "toMs": 470320
+    },
+    {
+     "verse": 67,
+     "fromMs": 470320,
+     "toMs": 475650
+    },
+    {
+     "verse": 68,
+     "fromMs": 475650,
+     "toMs": 484740
+    },
+    {
+     "verse": 69,
+     "fromMs": 484740,
+     "toMs": 496780
+    },
+    {
+     "verse": 70,
+     "fromMs": 496780,
+     "toMs": 507620
+    },
+    {
+     "verse": 71,
+     "fromMs": 507620,
+     "toMs": 515950
+    },
+    {
+     "verse": 72,
+     "fromMs": 515950,
+     "toMs": 529350
+    },
+    {
+     "verse": 73,
+     "fromMs": 529350,
+     "toMs": 539200
+    },
+    {
+     "verse": 74,
+     "fromMs": 539200,
+     "toMs": 545100
+    },
+    {
+     "verse": 75,
+     "fromMs": 545100,
+     "toMs": 553590
+    },
+    {
+     "verse": 76,
+     "fromMs": 553590,
+     "toMs": 562260
+    },
+    {
+     "verse": 77,
+     "fromMs": 562260,
+     "toMs": 569970
+    },
+    {
+     "verse": 78,
+     "fromMs": 569970,
+     "toMs": 575660
+    },
+    {
+     "verse": 79,
+     "fromMs": 575660,
+     "toMs": 583710
+    },
+    {
+     "verse": 80,
+     "fromMs": 583710,
+     "toMs": 591810
+    },
+    {
+     "verse": 81,
+     "fromMs": 591810,
+     "toMs": 599880
+    },
+    {
+     "verse": 82,
+     "fromMs": 599880,
+     "toMs": 608210
+    },
+    {
+     "verse": 83,
+     "fromMs": 608210,
+     "toMs": 615790
+    },
+    {
+     "verse": 84,
+     "fromMs": 615790,
+     "toMs": 625170
+    },
+    {
+     "verse": 85,
+     "fromMs": 625170,
+     "toMs": 634680
+    },
+    {
+     "verse": 86,
+     "fromMs": 634680,
+     "toMs": 644530
+    },
+    {
+     "verse": 87,
+     "fromMs": 644530,
+     "toMs": 654460
+    },
+    {
+     "verse": 88,
+     "fromMs": 654460,
+     "toMs": 664260
+    },
+    {
+     "verse": 89,
+     "fromMs": 664260,
+     "toMs": 673350
+    },
+    {
+     "verse": 90,
+     "fromMs": 673350,
+     "toMs": 683590
+    },
+    {
+     "verse": 91,
+     "fromMs": 683590,
+     "toMs": 690460
+    },
+    {
+     "verse": 92,
+     "fromMs": 690460,
+     "toMs": 704460
+    },
+    {
+     "verse": 93,
+     "fromMs": 704460,
+     "toMs": 710080
+    },
+    {
+     "verse": 94,
+     "fromMs": 710080,
+     "toMs": 714730
+    },
+    {
+     "verse": 95,
+     "fromMs": 714730,
+     "toMs": 721780
+    },
+    {
+     "verse": 96,
+     "fromMs": 721780,
+     "toMs": 730170
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "nameFa": "عبدالباسط عبدالصمد",
+   "nameEn": "AbdulBaset AbdulSamad",
+   "style": "murattal",
+   "audioUrl": "https://download.quranicaudio.com/qdc/abdul_baset/murattal/56.mp3",
+   "timingSource": "Quran.com / Quran Foundation QDC API: /api/qdc/audio/reciters/2/audio_files?chapter=56&segments=true",
+   "timings": [
+    {
+     "verse": 1,
+     "fromMs": 0,
+     "toMs": 3980
+    },
+    {
+     "verse": 2,
+     "fromMs": 3980,
+     "toMs": 8300
+    },
+    {
+     "verse": 3,
+     "fromMs": 8300,
+     "toMs": 11910
+    },
+    {
+     "verse": 4,
+     "fromMs": 11910,
+     "toMs": 16510
+    },
+    {
+     "verse": 5,
+     "fromMs": 16510,
+     "toMs": 20960
+    },
+    {
+     "verse": 6,
+     "fromMs": 20960,
+     "toMs": 29040
+    },
+    {
+     "verse": 7,
+     "fromMs": 29040,
+     "toMs": 34430
+    },
+    {
+     "verse": 8,
+     "fromMs": 34430,
+     "toMs": 41960
+    },
+    {
+     "verse": 9,
+     "fromMs": 41960,
+     "toMs": 49570
+    },
+    {
+     "verse": 10,
+     "fromMs": 49570,
+     "toMs": 53940
+    },
+    {
+     "verse": 11,
+     "fromMs": 53940,
+     "toMs": 59120
+    },
+    {
+     "verse": 12,
+     "fromMs": 59120,
+     "toMs": 63570
+    },
+    {
+     "verse": 13,
+     "fromMs": 63570,
+     "toMs": 68460
+    },
+    {
+     "verse": 14,
+     "fromMs": 68460,
+     "toMs": 73350
+    },
+    {
+     "verse": 15,
+     "fromMs": 73350,
+     "toMs": 77560
+    },
+    {
+     "verse": 16,
+     "fromMs": 77560,
+     "toMs": 83230
+    },
+    {
+     "verse": 17,
+     "fromMs": 83230,
+     "toMs": 89950
+    },
+    {
+     "verse": 18,
+     "fromMs": 89950,
+     "toMs": 98260
+    },
+    {
+     "verse": 19,
+     "fromMs": 98260,
+     "toMs": 105370
+    },
+    {
+     "verse": 20,
+     "fromMs": 105370,
+     "toMs": 111930
+    },
+    {
+     "verse": 21,
+     "fromMs": 111930,
+     "toMs": 117810
+    },
+    {
+     "verse": 22,
+     "fromMs": 117810,
+     "toMs": 120980
+    },
+    {
+     "verse": 23,
+     "fromMs": 120980,
+     "toMs": 125740
+    },
+    {
+     "verse": 24,
+     "fromMs": 125740,
+     "toMs": 132460
+    },
+    {
+     "verse": 25,
+     "fromMs": 132460,
+     "toMs": 140380
+    },
+    {
+     "verse": 26,
+     "fromMs": 140380,
+     "toMs": 146390
+    },
+    {
+     "verse": 27,
+     "fromMs": 146390,
+     "toMs": 153840
+    },
+    {
+     "verse": 28,
+     "fromMs": 153840,
+     "toMs": 157760
+    },
+    {
+     "verse": 29,
+     "fromMs": 157760,
+     "toMs": 162570
+    },
+    {
+     "verse": 30,
+     "fromMs": 162570,
+     "toMs": 166520
+    },
+    {
+     "verse": 31,
+     "fromMs": 166520,
+     "toMs": 171360
+    },
+    {
+     "verse": 32,
+     "fromMs": 171360,
+     "toMs": 175860
+    },
+    {
+     "verse": 33,
+     "fromMs": 175860,
+     "toMs": 181530
+    },
+    {
+     "verse": 34,
+     "fromMs": 181530,
+     "toMs": 185480
+    },
+    {
+     "verse": 35,
+     "fromMs": 185480,
+     "toMs": 196480
+    },
+    {
+     "verse": 36,
+     "fromMs": 196480,
+     "toMs": 201530
+    },
+    {
+     "verse": 37,
+     "fromMs": 201530,
+     "toMs": 204510
+    },
+    {
+     "verse": 38,
+     "fromMs": 204510,
+     "toMs": 208300
+    },
+    {
+     "verse": 39,
+     "fromMs": 208300,
+     "toMs": 212540
+    },
+    {
+     "verse": 40,
+     "fromMs": 212540,
+     "toMs": 217530
+    },
+    {
+     "verse": 41,
+     "fromMs": 217530,
+     "toMs": 225450
+    },
+    {
+     "verse": 42,
+     "fromMs": 225450,
+     "toMs": 230000
+    },
+    {
+     "verse": 43,
+     "fromMs": 230000,
+     "toMs": 234840
+    },
+    {
+     "verse": 44,
+     "fromMs": 234840,
+     "toMs": 240380
+    },
+    {
+     "verse": 45,
+     "fromMs": 240380,
+     "toMs": 248140
+    },
+    {
+     "verse": 46,
+     "fromMs": 248140,
+     "toMs": 255170
+    },
+    {
+     "verse": 47,
+     "fromMs": 255170,
+     "toMs": 269880
+    },
+    {
+     "verse": 48,
+     "fromMs": 269880,
+     "toMs": 275840
+    },
+    {
+     "verse": 49,
+     "fromMs": 275840,
+     "toMs": 282110
+    },
+    {
+     "verse": 50,
+     "fromMs": 282110,
+     "toMs": 289930
+    },
+    {
+     "verse": 51,
+     "fromMs": 289930,
+     "toMs": 301430
+    },
+    {
+     "verse": 52,
+     "fromMs": 301430,
+     "toMs": 309400
+    },
+    {
+     "verse": 53,
+     "fromMs": 309400,
+     "toMs": 314130
+    },
+    {
+     "verse": 54,
+     "fromMs": 314130,
+     "toMs": 319150
+    },
+    {
+     "verse": 55,
+     "fromMs": 319150,
+     "toMs": 323260
+    },
+    {
+     "verse": 56,
+     "fromMs": 323260,
+     "toMs": 328050
+    },
+    {
+     "verse": 57,
+     "fromMs": 328050,
+     "toMs": 334430
+    },
+    {
+     "verse": 58,
+     "fromMs": 334430,
+     "toMs": 339950
+    },
+    {
+     "verse": 59,
+     "fromMs": 339950,
+     "toMs": 348630
+    },
+    {
+     "verse": 60,
+     "fromMs": 348630,
+     "toMs": 357360
+    },
+    {
+     "verse": 61,
+     "fromMs": 357360,
+     "toMs": 369360
+    },
+    {
+     "verse": 62,
+     "fromMs": 369360,
+     "toMs": 378460
+    },
+    {
+     "verse": 63,
+     "fromMs": 378460,
+     "toMs": 384320
+    },
+    {
+     "verse": 64,
+     "fromMs": 384320,
+     "toMs": 392870
+    },
+    {
+     "verse": 65,
+     "fromMs": 392870,
+     "toMs": 402510
+    },
+    {
+     "verse": 66,
+     "fromMs": 402510,
+     "toMs": 407090
+    },
+    {
+     "verse": 67,
+     "fromMs": 407090,
+     "toMs": 410470
+    },
+    {
+     "verse": 68,
+     "fromMs": 410470,
+     "toMs": 417550
+    },
+    {
+     "verse": 69,
+     "fromMs": 417550,
+     "toMs": 427720
+    },
+    {
+     "verse": 70,
+     "fromMs": 427720,
+     "toMs": 436500
+    },
+    {
+     "verse": 71,
+     "fromMs": 436500,
+     "toMs": 443480
+    },
+    {
+     "verse": 72,
+     "fromMs": 443480,
+     "toMs": 454350
+    },
+    {
+     "verse": 73,
+     "fromMs": 454350,
+     "toMs": 462740
+    },
+    {
+     "verse": 74,
+     "fromMs": 462740,
+     "toMs": 467320
+    },
+    {
+     "verse": 75,
+     "fromMs": 467320,
+     "toMs": 474170
+    },
+    {
+     "verse": 76,
+     "fromMs": 474170,
+     "toMs": 481020
+    },
+    {
+     "verse": 77,
+     "fromMs": 481020,
+     "toMs": 487560
+    },
+    {
+     "verse": 78,
+     "fromMs": 487560,
+     "toMs": 492140
+    },
+    {
+     "verse": 79,
+     "fromMs": 492140,
+     "toMs": 498880
+    },
+    {
+     "verse": 80,
+     "fromMs": 498880,
+     "toMs": 505210
+    },
+    {
+     "verse": 81,
+     "fromMs": 505210,
+     "toMs": 512690
+    },
+    {
+     "verse": 82,
+     "fromMs": 512690,
+     "toMs": 519960
+    },
+    {
+     "verse": 83,
+     "fromMs": 519960,
+     "toMs": 526570
+    },
+    {
+     "verse": 84,
+     "fromMs": 526570,
+     "toMs": 533730
+    },
+    {
+     "verse": 85,
+     "fromMs": 533730,
+     "toMs": 541700
+    },
+    {
+     "verse": 86,
+     "fromMs": 541700,
+     "toMs": 549860
+    },
+    {
+     "verse": 87,
+     "fromMs": 549860,
+     "toMs": 557960
+    },
+    {
+     "verse": 88,
+     "fromMs": 557960,
+     "toMs": 565930
+    },
+    {
+     "verse": 89,
+     "fromMs": 565930,
+     "toMs": 573300
+    },
+    {
+     "verse": 90,
+     "fromMs": 573300,
+     "toMs": 581480
+    },
+    {
+     "verse": 91,
+     "fromMs": 581480,
+     "toMs": 587570
+    },
+    {
+     "verse": 92,
+     "fromMs": 587570,
+     "toMs": 599380
+    },
+    {
+     "verse": 93,
+     "fromMs": 599380,
+     "toMs": 603150
+    },
+    {
+     "verse": 94,
+     "fromMs": 603150,
+     "toMs": 606160
+    },
+    {
+     "verse": 95,
+     "fromMs": 606160,
+     "toMs": 612460
+    },
+    {
+     "verse": 96,
+     "fromMs": 612460,
+     "toMs": 616980
+    }
+   ]
+  },
+  {
+   "id": 6,
+   "nameFa": "محمود خلیل الحصری",
+   "nameEn": "Mahmoud Khalil Al-Husary",
+   "style": "murattal",
+   "audioUrl": "https://download.quranicaudio.com/qdc/khalil_al_husary/murattal/56.mp3",
+   "timingSource": "Quran.com / Quran Foundation QDC API: /api/qdc/audio/reciters/6/audio_files?chapter=56&segments=true",
+   "timings": [
+    {
+     "verse": 1,
+     "fromMs": 0,
+     "toMs": 6640
+    },
+    {
+     "verse": 2,
+     "fromMs": 6640,
+     "toMs": 14370
+    },
+    {
+     "verse": 3,
+     "fromMs": 14370,
+     "toMs": 20770
+    },
+    {
+     "verse": 4,
+     "fromMs": 20770,
+     "toMs": 28320
+    },
+    {
+     "verse": 5,
+     "fromMs": 28320,
+     "toMs": 35610
+    },
+    {
+     "verse": 6,
+     "fromMs": 35610,
+     "toMs": 45930
+    },
+    {
+     "verse": 7,
+     "fromMs": 45930,
+     "toMs": 56430
+    },
+    {
+     "verse": 8,
+     "fromMs": 56430,
+     "toMs": 68840
+    },
+    {
+     "verse": 9,
+     "fromMs": 68840,
+     "toMs": 82240
+    },
+    {
+     "verse": 10,
+     "fromMs": 82240,
+     "toMs": 90100
+    },
+    {
+     "verse": 11,
+     "fromMs": 90100,
+     "toMs": 98280
+    },
+    {
+     "verse": 12,
+     "fromMs": 98280,
+     "toMs": 106090
+    },
+    {
+     "verse": 13,
+     "fromMs": 106090,
+     "toMs": 113460
+    },
+    {
+     "verse": 14,
+     "fromMs": 113460,
+     "toMs": 122210
+    },
+    {
+     "verse": 15,
+     "fromMs": 122210,
+     "toMs": 129390
+    },
+    {
+     "verse": 16,
+     "fromMs": 129390,
+     "toMs": 140540
+    },
+    {
+     "verse": 17,
+     "fromMs": 140540,
+     "toMs": 150940
+    },
+    {
+     "verse": 18,
+     "fromMs": 150940,
+     "toMs": 165230
+    },
+    {
+     "verse": 19,
+     "fromMs": 165230,
+     "toMs": 177250
+    },
+    {
+     "verse": 20,
+     "fromMs": 177250,
+     "toMs": 188460
+    },
+    {
+     "verse": 21,
+     "fromMs": 188460,
+     "toMs": 198460
+    },
+    {
+     "verse": 22,
+     "fromMs": 198460,
+     "toMs": 205070
+    },
+    {
+     "verse": 23,
+     "fromMs": 205070,
+     "toMs": 213790
+    },
+    {
+     "verse": 24,
+     "fromMs": 213790,
+     "toMs": 225910
+    },
+    {
+     "verse": 25,
+     "fromMs": 225910,
+     "toMs": 238110
+    },
+    {
+     "verse": 26,
+     "fromMs": 238110,
+     "toMs": 249130
+    },
+    {
+     "verse": 27,
+     "fromMs": 249130,
+     "toMs": 261410
+    },
+    {
+     "verse": 28,
+     "fromMs": 261410,
+     "toMs": 268830
+    },
+    {
+     "verse": 29,
+     "fromMs": 268830,
+     "toMs": 276610
+    },
+    {
+     "verse": 30,
+     "fromMs": 276610,
+     "toMs": 283170
+    },
+    {
+     "verse": 31,
+     "fromMs": 283170,
+     "toMs": 292180
+    },
+    {
+     "verse": 32,
+     "fromMs": 292180,
+     "toMs": 298630
+    },
+    {
+     "verse": 33,
+     "fromMs": 298630,
+     "toMs": 307800
+    },
+    {
+     "verse": 34,
+     "fromMs": 307800,
+     "toMs": 314770
+    },
+    {
+     "verse": 35,
+     "fromMs": 314770,
+     "toMs": 327600
+    },
+    {
+     "verse": 36,
+     "fromMs": 327600,
+     "toMs": 335960
+    },
+    {
+     "verse": 37,
+     "fromMs": 335960,
+     "toMs": 342070
+    },
+    {
+     "verse": 38,
+     "fromMs": 342070,
+     "toMs": 349230
+    },
+    {
+     "verse": 39,
+     "fromMs": 349230,
+     "toMs": 357430
+    },
+    {
+     "verse": 40,
+     "fromMs": 357430,
+     "toMs": 366260
+    },
+    {
+     "verse": 41,
+     "fromMs": 366260,
+     "toMs": 379060
+    },
+    {
+     "verse": 42,
+     "fromMs": 379060,
+     "toMs": 386560
+    },
+    {
+     "verse": 43,
+     "fromMs": 386560,
+     "toMs": 394160
+    },
+    {
+     "verse": 44,
+     "fromMs": 394160,
+     "toMs": 402550
+    },
+    {
+     "verse": 45,
+     "fromMs": 402550,
+     "toMs": 412970
+    },
+    {
+     "verse": 46,
+     "fromMs": 412970,
+     "toMs": 425010
+    },
+    {
+     "verse": 47,
+     "fromMs": 425010,
+     "toMs": 446430
+    },
+    {
+     "verse": 48,
+     "fromMs": 446430,
+     "toMs": 456540
+    },
+    {
+     "verse": 49,
+     "fromMs": 456540,
+     "toMs": 466810
+    },
+    {
+     "verse": 50,
+     "fromMs": 466810,
+     "toMs": 480630
+    },
+    {
+     "verse": 51,
+     "fromMs": 480630,
+     "toMs": 496620
+    },
+    {
+     "verse": 52,
+     "fromMs": 496620,
+     "toMs": 508110
+    },
+    {
+     "verse": 53,
+     "fromMs": 508110,
+     "toMs": 515220
+    },
+    {
+     "verse": 54,
+     "fromMs": 515220,
+     "toMs": 523420
+    },
+    {
+     "verse": 55,
+     "fromMs": 523420,
+     "toMs": 530680
+    },
+    {
+     "verse": 56,
+     "fromMs": 530680,
+     "toMs": 538880
+    },
+    {
+     "verse": 57,
+     "fromMs": 538880,
+     "toMs": 549930
+    },
+    {
+     "verse": 58,
+     "fromMs": 549930,
+     "toMs": 557870
+    },
+    {
+     "verse": 59,
+     "fromMs": 557870,
+     "toMs": 570490
+    },
+    {
+     "verse": 60,
+     "fromMs": 570490,
+     "toMs": 584700
+    },
+    {
+     "verse": 61,
+     "fromMs": 584700,
+     "toMs": 601860
+    },
+    {
+     "verse": 62,
+     "fromMs": 601860,
+     "toMs": 617060
+    },
+    {
+     "verse": 63,
+     "fromMs": 617060,
+     "toMs": 625520
+    },
+    {
+     "verse": 64,
+     "fromMs": 625520,
+     "toMs": 639080
+    },
+    {
+     "verse": 65,
+     "fromMs": 639080,
+     "toMs": 655300
+    },
+    {
+     "verse": 66,
+     "fromMs": 655300,
+     "toMs": 661860
+    },
+    {
+     "verse": 67,
+     "fromMs": 661860,
+     "toMs": 670140
+    },
+    {
+     "verse": 68,
+     "fromMs": 670140,
+     "toMs": 680430
+    },
+    {
+     "verse": 69,
+     "fromMs": 680430,
+     "toMs": 694820
+    },
+    {
+     "verse": 70,
+     "fromMs": 694820,
+     "toMs": 708530
+    },
+    {
+     "verse": 71,
+     "fromMs": 708530,
+     "toMs": 718740
+    },
+    {
+     "verse": 72,
+     "fromMs": 718740,
+     "toMs": 734540
+    },
+    {
+     "verse": 73,
+     "fromMs": 734540,
+     "toMs": 748280
+    },
+    {
+     "verse": 74,
+     "fromMs": 748280,
+     "toMs": 758210
+    },
+    {
+     "verse": 75,
+     "fromMs": 758210,
+     "toMs": 768140
+    },
+    {
+     "verse": 76,
+     "fromMs": 768140,
+     "toMs": 778800
+    },
+    {
+     "verse": 77,
+     "fromMs": 778800,
+     "toMs": 787710
+    },
+    {
+     "verse": 78,
+     "fromMs": 787710,
+     "toMs": 794680
+    },
+    {
+     "verse": 79,
+     "fromMs": 794680,
+     "toMs": 805910
+    },
+    {
+     "verse": 80,
+     "fromMs": 805910,
+     "toMs": 816120
+    },
+    {
+     "verse": 81,
+     "fromMs": 816120,
+     "toMs": 827010
+    },
+    {
+     "verse": 82,
+     "fromMs": 827010,
+     "toMs": 838270
+    },
+    {
+     "verse": 83,
+     "fromMs": 838270,
+     "toMs": 849060
+    },
+    {
+     "verse": 84,
+     "fromMs": 849060,
+     "toMs": 858960
+    },
+    {
+     "verse": 85,
+     "fromMs": 858960,
+     "toMs": 872180
+    },
+    {
+     "verse": 86,
+     "fromMs": 872180,
+     "toMs": 885080
+    },
+    {
+     "verse": 87,
+     "fromMs": 885080,
+     "toMs": 898590
+    },
+    {
+     "verse": 88,
+     "fromMs": 898590,
+     "toMs": 910270
+    },
+    {
+     "verse": 89,
+     "fromMs": 910270,
+     "toMs": 923070
+    },
+    {
+     "verse": 90,
+     "fromMs": 923070,
+     "toMs": 935110
+    },
+    {
+     "verse": 91,
+     "fromMs": 935110,
+     "toMs": 944700
+    },
+    {
+     "verse": 92,
+     "fromMs": 944700,
+     "toMs": 960900
+    },
+    {
+     "verse": 93,
+     "fromMs": 960900,
+     "toMs": 967270
+    },
+    {
+     "verse": 94,
+     "fromMs": 967270,
+     "toMs": 973250
+    },
+    {
+     "verse": 95,
+     "fromMs": 973250,
+     "toMs": 983310
+    },
+    {
+     "verse": 96,
+     "fromMs": 983310,
+     "toMs": 992090
+    }
+   ]
+  },
+  {
+   "id": 9,
+   "nameFa": "محمد صدیق المنشاوی",
+   "nameEn": "Mohamed Siddiq al-Minshawi",
+   "style": "murattal",
+   "audioUrl": "https://download.quranicaudio.com/qdc/siddiq_minshawi/murattal/56.mp3",
+   "timingSource": "Quran.com / Quran Foundation QDC API: /api/qdc/audio/reciters/9/audio_files?chapter=56&segments=true",
+   "timings": [
+    {
+     "verse": 1,
+     "fromMs": 0,
+     "toMs": 3580
+    },
+    {
+     "verse": 2,
+     "fromMs": 3580,
+     "toMs": 7940
+    },
+    {
+     "verse": 3,
+     "fromMs": 7940,
+     "toMs": 11600
+    },
+    {
+     "verse": 4,
+     "fromMs": 11600,
+     "toMs": 15880
+    },
+    {
+     "verse": 5,
+     "fromMs": 15880,
+     "toMs": 19930
+    },
+    {
+     "verse": 6,
+     "fromMs": 19930,
+     "toMs": 26700
+    },
+    {
+     "verse": 7,
+     "fromMs": 26700,
+     "toMs": 32210
+    },
+    {
+     "verse": 8,
+     "fromMs": 32210,
+     "toMs": 39710
+    },
+    {
+     "verse": 9,
+     "fromMs": 39710,
+     "toMs": 47210
+    },
+    {
+     "verse": 10,
+     "fromMs": 47210,
+     "toMs": 51760
+    },
+    {
+     "verse": 11,
+     "fromMs": 51760,
+     "toMs": 56800
+    },
+    {
+     "verse": 12,
+     "fromMs": 56800,
+     "toMs": 61550
+    },
+    {
+     "verse": 13,
+     "fromMs": 61550,
+     "toMs": 66250
+    },
+    {
+     "verse": 14,
+     "fromMs": 66250,
+     "toMs": 71160
+    },
+    {
+     "verse": 15,
+     "fromMs": 71160,
+     "toMs": 75780
+    },
+    {
+     "verse": 16,
+     "fromMs": 75780,
+     "toMs": 81840
+    },
+    {
+     "verse": 17,
+     "fromMs": 81840,
+     "toMs": 88580
+    },
+    {
+     "verse": 18,
+     "fromMs": 88580,
+     "toMs": 97070
+    },
+    {
+     "verse": 19,
+     "fromMs": 97070,
+     "toMs": 103840
+    },
+    {
+     "verse": 20,
+     "fromMs": 103840,
+     "toMs": 110760
+    },
+    {
+     "verse": 21,
+     "fromMs": 110760,
+     "toMs": 116820
+    },
+    {
+     "verse": 22,
+     "fromMs": 116820,
+     "toMs": 119590
+    },
+    {
+     "verse": 23,
+     "fromMs": 119590,
+     "toMs": 125210
+    },
+    {
+     "verse": 24,
+     "fromMs": 125210,
+     "toMs": 132890
+    },
+    {
+     "verse": 25,
+     "fromMs": 132890,
+     "toMs": 140940
+    },
+    {
+     "verse": 26,
+     "fromMs": 140940,
+     "toMs": 147600
+    },
+    {
+     "verse": 27,
+     "fromMs": 147600,
+     "toMs": 155280
+    },
+    {
+     "verse": 28,
+     "fromMs": 155280,
+     "toMs": 159510
+    },
+    {
+     "verse": 29,
+     "fromMs": 159510,
+     "toMs": 164060
+    },
+    {
+     "verse": 30,
+     "fromMs": 164060,
+     "toMs": 167870
+    },
+    {
+     "verse": 31,
+     "fromMs": 167870,
+     "toMs": 173020
+    },
+    {
+     "verse": 32,
+     "fromMs": 173020,
+     "toMs": 177250
+    },
+    {
+     "verse": 33,
+     "fromMs": 177250,
+     "toMs": 183100
+    },
+    {
+     "verse": 34,
+     "fromMs": 183100,
+     "toMs": 187150
+    },
+    {
+     "verse": 35,
+     "fromMs": 187150,
+     "toMs": 197600
+    },
+    {
+     "verse": 36,
+     "fromMs": 197600,
+     "toMs": 202640
+    },
+    {
+     "verse": 37,
+     "fromMs": 202640,
+     "toMs": 206270
+    },
+    {
+     "verse": 38,
+     "fromMs": 206270,
+     "toMs": 209720
+    },
+    {
+     "verse": 39,
+     "fromMs": 209720,
+     "toMs": 214420
+    },
+    {
+     "verse": 40,
+     "fromMs": 214420,
+     "toMs": 219330
+    },
+    {
+     "verse": 41,
+     "fromMs": 219330,
+     "toMs": 226980
+    },
+    {
+     "verse": 42,
+     "fromMs": 226980,
+     "toMs": 231030
+    },
+    {
+     "verse": 43,
+     "fromMs": 231030,
+     "toMs": 235890
+    },
+    {
+     "verse": 44,
+     "fromMs": 235890,
+     "toMs": 240570
+    },
+    {
+     "verse": 45,
+     "fromMs": 240570,
+     "toMs": 247600
+    },
+    {
+     "verse": 46,
+     "fromMs": 247600,
+     "toMs": 254520
+    },
+    {
+     "verse": 47,
+     "fromMs": 254520,
+     "toMs": 269410
+    },
+    {
+     "verse": 48,
+     "fromMs": 269410,
+     "toMs": 275470
+    },
+    {
+     "verse": 49,
+     "fromMs": 275470,
+     "toMs": 282310
+    },
+    {
+     "verse": 50,
+     "fromMs": 282310,
+     "toMs": 290360
+    },
+    {
+     "verse": 51,
+     "fromMs": 290360,
+     "toMs": 301360
+    },
+    {
+     "verse": 52,
+     "fromMs": 301360,
+     "toMs": 309220
+    },
+    {
+     "verse": 53,
+     "fromMs": 309220,
+     "toMs": 314290
+    },
+    {
+     "verse": 54,
+     "fromMs": 314290,
+     "toMs": 319650
+    },
+    {
+     "verse": 55,
+     "fromMs": 319650,
+     "toMs": 323880
+    },
+    {
+     "verse": 56,
+     "fromMs": 323880,
+     "toMs": 328530
+    },
+    {
+     "verse": 57,
+     "fromMs": 328530,
+     "toMs": 334930
+    },
+    {
+     "verse": 58,
+     "fromMs": 334930,
+     "toMs": 339810
+    },
+    {
+     "verse": 59,
+     "fromMs": 339810,
+     "toMs": 348850
+    },
+    {
+     "verse": 60,
+     "fromMs": 348850,
+     "toMs": 358070
+    },
+    {
+     "verse": 61,
+     "fromMs": 358070,
+     "toMs": 370350
+    },
+    {
+     "verse": 62,
+     "fromMs": 370350,
+     "toMs": 380120
+    },
+    {
+     "verse": 63,
+     "fromMs": 380120,
+     "toMs": 385680
+    },
+    {
+     "verse": 64,
+     "fromMs": 385680,
+     "toMs": 394720
+    },
+    {
+     "verse": 65,
+     "fromMs": 394720,
+     "toMs": 404960
+    },
+    {
+     "verse": 66,
+     "fromMs": 404960,
+     "toMs": 409610
+    },
+    {
+     "verse": 67,
+     "fromMs": 409610,
+     "toMs": 413660
+    },
+    {
+     "verse": 68,
+     "fromMs": 413660,
+     "toMs": 421180
+    },
+    {
+     "verse": 69,
+     "fromMs": 421180,
+     "toMs": 431760
+    },
+    {
+     "verse": 70,
+     "fromMs": 431760,
+     "toMs": 441290
+    },
+    {
+     "verse": 71,
+     "fromMs": 441290,
+     "toMs": 448160
+    },
+    {
+     "verse": 72,
+     "fromMs": 448160,
+     "toMs": 459520
+    },
+    {
+     "verse": 73,
+     "fromMs": 459520,
+     "toMs": 468560
+    },
+    {
+     "verse": 74,
+     "fromMs": 468560,
+     "toMs": 473710
+    },
+    {
+     "verse": 75,
+     "fromMs": 473710,
+     "toMs": 480890
+    },
+    {
+     "verse": 76,
+     "fromMs": 480890,
+     "toMs": 488310
+    },
+    {
+     "verse": 77,
+     "fromMs": 488310,
+     "toMs": 495050
+    },
+    {
+     "verse": 78,
+     "fromMs": 495050,
+     "toMs": 499570
+    },
+    {
+     "verse": 79,
+     "fromMs": 499570,
+     "toMs": 506310
+    },
+    {
+     "verse": 80,
+     "fromMs": 506310,
+     "toMs": 512920
+    },
+    {
+     "verse": 81,
+     "fromMs": 512920,
+     "toMs": 520310
+    },
+    {
+     "verse": 82,
+     "fromMs": 520310,
+     "toMs": 527730
+    },
+    {
+     "verse": 83,
+     "fromMs": 527730,
+     "toMs": 534600
+    },
+    {
+     "verse": 84,
+     "fromMs": 534600,
+     "toMs": 541570
+    },
+    {
+     "verse": 85,
+     "fromMs": 541570,
+     "toMs": 550290
+    },
+    {
+     "verse": 86,
+     "fromMs": 550290,
+     "toMs": 558750
+    },
+    {
+     "verse": 87,
+     "fromMs": 558750,
+     "toMs": 566800
+    },
+    {
+     "verse": 88,
+     "fromMs": 566800,
+     "toMs": 575190
+    },
+    {
+     "verse": 89,
+     "fromMs": 575190,
+     "toMs": 582610
+    },
+    {
+     "verse": 90,
+     "fromMs": 582610,
+     "toMs": 591330
+    },
+    {
+     "verse": 91,
+     "fromMs": 591330,
+     "toMs": 597080
+    },
+    {
+     "verse": 92,
+     "fromMs": 597080,
+     "toMs": 609120
+    },
+    {
+     "verse": 93,
+     "fromMs": 609120,
+     "toMs": 612910
+    },
+    {
+     "verse": 94,
+     "fromMs": 612910,
+     "toMs": 616100
+    },
+    {
+     "verse": 95,
+     "fromMs": 616100,
+     "toMs": 621980
+    },
+    {
+     "verse": 96,
+     "fromMs": 621980,
+     "toMs": 627200
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "nameFa": "عبدالرحمن السدیس",
+   "nameEn": "Abdur-Rahman as-Sudais",
+   "style": "murattal",
+   "audioUrl": "https://download.quranicaudio.com/qdc/abdurrahmaan_as_sudais/murattal/56.mp3",
+   "timingSource": "Quran.com / Quran Foundation QDC API: /api/qdc/audio/reciters/3/audio_files?chapter=56&segments=true",
+   "timings": [
+    {
+     "verse": 1,
+     "fromMs": 0,
+     "toMs": 2640
+    },
+    {
+     "verse": 2,
+     "fromMs": 2640,
+     "toMs": 5490
+    },
+    {
+     "verse": 3,
+     "fromMs": 5490,
+     "toMs": 7320
+    },
+    {
+     "verse": 4,
+     "fromMs": 7320,
+     "toMs": 9980
+    },
+    {
+     "verse": 5,
+     "fromMs": 9980,
+     "toMs": 12540
+    },
+    {
+     "verse": 6,
+     "fromMs": 12540,
+     "toMs": 16980
+    },
+    {
+     "verse": 7,
+     "fromMs": 16980,
+     "toMs": 20300
+    },
+    {
+     "verse": 8,
+     "fromMs": 20300,
+     "toMs": 24450
+    },
+    {
+     "verse": 9,
+     "fromMs": 24450,
+     "toMs": 28660
+    },
+    {
+     "verse": 10,
+     "fromMs": 28660,
+     "toMs": 31770
+    },
+    {
+     "verse": 11,
+     "fromMs": 31770,
+     "toMs": 35190
+    },
+    {
+     "verse": 12,
+     "fromMs": 35190,
+     "toMs": 38170
+    },
+    {
+     "verse": 13,
+     "fromMs": 38170,
+     "toMs": 40700
+    },
+    {
+     "verse": 14,
+     "fromMs": 40700,
+     "toMs": 43470
+    },
+    {
+     "verse": 15,
+     "fromMs": 43470,
+     "toMs": 45820
+    },
+    {
+     "verse": 16,
+     "fromMs": 45820,
+     "toMs": 49580
+    },
+    {
+     "verse": 17,
+     "fromMs": 49580,
+     "toMs": 53370
+    },
+    {
+     "verse": 18,
+     "fromMs": 53370,
+     "toMs": 58280
+    },
+    {
+     "verse": 19,
+     "fromMs": 58280,
+     "toMs": 62410
+    },
+    {
+     "verse": 20,
+     "fromMs": 62410,
+     "toMs": 66560
+    },
+    {
+     "verse": 21,
+     "fromMs": 66560,
+     "toMs": 70580
+    },
+    {
+     "verse": 22,
+     "fromMs": 70580,
+     "toMs": 72300
+    },
+    {
+     "verse": 23,
+     "fromMs": 72300,
+     "toMs": 75570
+    },
+    {
+     "verse": 24,
+     "fromMs": 75570,
+     "toMs": 80480
+    },
+    {
+     "verse": 25,
+     "fromMs": 80480,
+     "toMs": 85520
+    },
+    {
+     "verse": 26,
+     "fromMs": 85520,
+     "toMs": 91400
+    },
+    {
+     "verse": 27,
+     "fromMs": 91400,
+     "toMs": 95810
+    },
+    {
+     "verse": 28,
+     "fromMs": 95810,
+     "toMs": 97930
+    },
+    {
+     "verse": 29,
+     "fromMs": 97930,
+     "toMs": 99990
+    },
+    {
+     "verse": 30,
+     "fromMs": 99990,
+     "toMs": 102110
+    },
+    {
+     "verse": 31,
+     "fromMs": 102110,
+     "toMs": 105790
+    },
+    {
+     "verse": 32,
+     "fromMs": 105790,
+     "toMs": 108320
+    },
+    {
+     "verse": 33,
+     "fromMs": 108320,
+     "toMs": 111770
+    },
+    {
+     "verse": 34,
+     "fromMs": 111770,
+     "toMs": 113810
+    },
+    {
+     "verse": 35,
+     "fromMs": 113810,
+     "toMs": 119640
+    },
+    {
+     "verse": 36,
+     "fromMs": 119640,
+     "toMs": 122250
+    },
+    {
+     "verse": 37,
+     "fromMs": 122250,
+     "toMs": 123840
+    },
+    {
+     "verse": 38,
+     "fromMs": 123840,
+     "toMs": 125960
+    },
+    {
+     "verse": 39,
+     "fromMs": 125960,
+     "toMs": 128260
+    },
+    {
+     "verse": 40,
+     "fromMs": 128260,
+     "toMs": 131160
+    },
+    {
+     "verse": 41,
+     "fromMs": 131160,
+     "toMs": 135780
+    },
+    {
+     "verse": 42,
+     "fromMs": 135780,
+     "toMs": 138630
+    },
+    {
+     "verse": 43,
+     "fromMs": 138630,
+     "toMs": 141660
+    },
+    {
+     "verse": 44,
+     "fromMs": 141660,
+     "toMs": 144590
+    },
+    {
+     "verse": 45,
+     "fromMs": 144590,
+     "toMs": 149060
+    },
+    {
+     "verse": 46,
+     "fromMs": 149060,
+     "toMs": 153190
+    },
+    {
+     "verse": 47,
+     "fromMs": 153190,
+     "toMs": 161780
+    },
+    {
+     "verse": 48,
+     "fromMs": 161780,
+     "toMs": 165930
+    },
+    {
+     "verse": 49,
+     "fromMs": 165930,
+     "toMs": 169770
+    },
+    {
+     "verse": 50,
+     "fromMs": 169770,
+     "toMs": 175800
+    },
+    {
+     "verse": 51,
+     "fromMs": 175800,
+     "toMs": 182770
+    },
+    {
+     "verse": 52,
+     "fromMs": 182770,
+     "toMs": 187210
+    },
+    {
+     "verse": 53,
+     "fromMs": 187210,
+     "toMs": 190270
+    },
+    {
+     "verse": 54,
+     "fromMs": 190270,
+     "toMs": 194270
+    },
+    {
+     "verse": 55,
+     "fromMs": 194270,
+     "toMs": 196960
+    },
+    {
+     "verse": 56,
+     "fromMs": 196960,
+     "toMs": 200410
+    },
+    {
+     "verse": 57,
+     "fromMs": 200410,
+     "toMs": 204750
+    },
+    {
+     "verse": 58,
+     "fromMs": 204750,
+     "toMs": 207700
+    },
+    {
+     "verse": 59,
+     "fromMs": 207700,
+     "toMs": 212610
+    },
+    {
+     "verse": 60,
+     "fromMs": 212610,
+     "toMs": 217810
+    },
+    {
+     "verse": 61,
+     "fromMs": 217810,
+     "toMs": 224970
+    },
+    {
+     "verse": 62,
+     "fromMs": 224970,
+     "toMs": 232680
+    },
+    {
+     "verse": 63,
+     "fromMs": 232680,
+     "toMs": 236210
+    },
+    {
+     "verse": 64,
+     "fromMs": 236210,
+     "toMs": 241070
+    },
+    {
+     "verse": 65,
+     "fromMs": 241070,
+     "toMs": 248590
+    },
+    {
+     "verse": 66,
+     "fromMs": 248590,
+     "toMs": 250580
+    },
+    {
+     "verse": 67,
+     "fromMs": 250580,
+     "toMs": 253240
+    },
+    {
+     "verse": 68,
+     "fromMs": 253240,
+     "toMs": 258330
+    },
+    {
+     "verse": 69,
+     "fromMs": 258330,
+     "toMs": 264340
+    },
+    {
+     "verse": 70,
+     "fromMs": 264340,
+     "toMs": 270560
+    },
+    {
+     "verse": 71,
+     "fromMs": 270560,
+     "toMs": 274740
+    },
+    {
+     "verse": 72,
+     "fromMs": 274740,
+     "toMs": 280750
+    },
+    {
+     "verse": 73,
+     "fromMs": 280750,
+     "toMs": 285840
+    },
+    {
+     "verse": 74,
+     "fromMs": 285840,
+     "toMs": 288920
+    },
+    {
+     "verse": 75,
+     "fromMs": 288920,
+     "toMs": 292940
+    },
+    {
+     "verse": 76,
+     "fromMs": 292940,
+     "toMs": 296960
+    },
+    {
+     "verse": 77,
+     "fromMs": 296960,
+     "toMs": 299730
+    },
+    {
+     "verse": 78,
+     "fromMs": 299730,
+     "toMs": 302050
+    },
+    {
+     "verse": 79,
+     "fromMs": 302050,
+     "toMs": 305340
+    },
+    {
+     "verse": 80,
+     "fromMs": 305340,
+     "toMs": 308660
+    },
+    {
+     "verse": 81,
+     "fromMs": 308660,
+     "toMs": 312810
+    },
+    {
+     "verse": 82,
+     "fromMs": 312810,
+     "toMs": 317200
+    },
+    {
+     "verse": 83,
+     "fromMs": 317200,
+     "toMs": 320670
+    },
+    {
+     "verse": 84,
+     "fromMs": 320670,
+     "toMs": 324770
+    },
+    {
+     "verse": 85,
+     "fromMs": 324770,
+     "toMs": 330150
+    },
+    {
+     "verse": 86,
+     "fromMs": 330150,
+     "toMs": 334280
+    },
+    {
+     "verse": 87,
+     "fromMs": 334280,
+     "toMs": 338490
+    },
+    {
+     "verse": 88,
+     "fromMs": 338490,
+     "toMs": 342930
+    },
+    {
+     "verse": 89,
+     "fromMs": 342930,
+     "toMs": 347290
+    },
+    {
+     "verse": 90,
+     "fromMs": 347290,
+     "toMs": 351420
+    },
+    {
+     "verse": 91,
+     "fromMs": 351420,
+     "toMs": 355000
+    },
+    {
+     "verse": 92,
+     "fromMs": 355000,
+     "toMs": 363100
+    },
+    {
+     "verse": 93,
+     "fromMs": 363100,
+     "toMs": 365710
+    },
+    {
+     "verse": 94,
+     "fromMs": 365710,
+     "toMs": 368430
+    },
+    {
+     "verse": 95,
+     "fromMs": 368430,
+     "toMs": 372400
+    },
+    {
+     "verse": 96,
+     "fromMs": 372400,
+     "toMs": 377490
+    }
+   ]
+  }
+ ]
+}

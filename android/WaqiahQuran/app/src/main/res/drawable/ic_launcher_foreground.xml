@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Eight-pointed star (Rub el Hizb) in gold. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:fillColor="#FFD4AF6A"
+        android:pathData="M36,36 L72,36 L72,72 L36,72 Z" />
+    <path
+        android:fillColor="#FFD4AF6A"
+        android:pathData="M54,28.5 L79.5,54 L54,79.5 L28.5,54 Z" />
+    <path
+        android:fillColor="#FF0A3D33"
+        android:pathData="M54,44 A10,10 0 1,1 53.99,44 Z" />
+</vector>

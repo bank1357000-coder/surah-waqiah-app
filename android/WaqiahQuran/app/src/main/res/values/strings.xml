@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">سوره واقعه</string>
+    <string name="nav_back">بازگشت</string>
+
+    <!-- Home -->
+    <string name="home_tagline">قرائت، شنیدن، حفظ و تدبر</string>
+    <string name="home_start_reading">شروع قرائت</string>
+    <string name="home_continue_reading">ادامه از آیه %1$s</string>
+    <string name="home_section_quran">قرآن و صوت</string>
+    <string name="home_section_surah">درباره سوره</string>
+    <string name="home_section_tools">ابزارها</string>
+    <string name="home_section_app">برنامه</string>
+
+    <string name="feature_reader">قرائت</string>
+    <string name="feature_reader_desc">خط عثمان طه با ترجمه</string>
+    <string name="feature_player">پخش صوت</string>
+    <string name="feature_player_desc">قاریان، سرعت و تکرار</string>
+    <string name="feature_memorization">حفظ</string>
+    <string name="feature_memorization_desc">تکرار، پنهان‌سازی و پیشرفت</string>
+    <string name="feature_tafsir">تفسیر</string>
+    <string name="feature_tafsir_desc">تفسیر آیه به آیه</string>
+    <string name="feature_info">معرفی سوره</string>
+    <string name="feature_info_desc">شناسنامه و محتوا</string>
+    <string name="feature_virtues">فضائل</string>
+    <string name="feature_virtues_desc">روایات با ذکر منبع</string>
+    <string name="feature_bookmarks">نشانک‌ها</string>
+    <string name="feature_bookmarks_desc">آیات ذخیره‌شده</string>
+    <string name="feature_search">جستجو</string>
+    <string name="feature_search_desc">متن، ترجمه و تفسیر</string>
+    <string name="feature_settings">تنظیمات</string>
+    <string name="feature_settings_desc">ظاهر، صوت و قرائت</string>
+    <string name="feature_about">درباره ما</string>
+    <string name="feature_other_apps">برنامه‌های دیگر ما</string>
+    <string name="feature_contact">تماس با ما</string>
+    <string name="feature_share_app">معرفی به دوستان</string>
+
+    <!-- Surah meta -->
+    <string name="surah_meccan">مکی</string>
+    <string name="surah_medinan">مدنی</string>
+    <string name="surah_verse_count">%1$s آیه</string>
+    <string name="surah_number">سوره %1$s</string>
+    <string name="juz_label">جزء %1$s</string>
+
+    <!-- Common states -->
+    <string name="state_loading">در حال بارگذاری…</string>
+    <string name="state_error_title">خطایی رخ داد</string>
+    <string name="state_retry">تلاش دوباره</string>
+    <string name="state_error_body">بارگذاری محتوا انجام نشد. دوباره تلاش کنید.</string>
+
+    <!-- Reader -->
+    <string name="action_bookmark">نشانک</string>
+    <string name="action_unbookmark">حذف نشانک</string>
+    <string name="action_copy">کپی</string>
+    <string name="action_share">اشتراک</string>
+    <string name="toast_copied">آیه کپی شد</string>
+    <string name="share_verse_title">اشتراک آیه</string>
+    <string name="verse_reference">سوره واقعه، آیه %1$s</string>
+    <string name="cd_bookmarked">نشان‌شده</string>
+
+    <!-- Share app -->
+    <string name="share_app_title">معرفی برنامه</string>
+    <string name="share_app_text">برنامه «سوره واقعه» را نصب کنید: %1$s</string>
+
+    <!-- Bookmarks -->
+    <string name="bookmarks_empty_title">هنوز نشانکی ندارید</string>
+    <string name="bookmarks_empty_body">در صفحه قرائت، روی هر آیه بزنید و آن را نشان کنید.</string>
+    <string name="bookmark_delete">حذف نشانک</string>
+
+    <!-- Settings -->
+    <string name="settings_section_appearance">ظاهر</string>
+    <string name="settings_theme">پوسته</string>
+    <string name="theme_system">سیستم</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">تیره</string>
+    <string name="settings_font_size">اندازه خط عربی</string>
+    <string name="settings_script">نوع خط قرآن</string>
+    <string name="script_hafs">عثمان طه (مجمع ملک فهد)</string>
+    <string name="script_tanzil">رسم عثمانی تنزیل (قلم امیری)</string>
+    <string name="settings_section_translation">ترجمه</string>
+    <string name="settings_primary_translation">ترجمه فارسی</string>
+    <string name="settings_show_english">نمایش ترجمه انگلیسی</string>
+    <string name="settings_section_audio">صوت</string>
+    <string name="settings_reciter">قاری</string>
+    <string name="settings_speed">سرعت پخش</string>
+    <string name="settings_speed_step">گام تغییر سرعت</string>
+    <string name="settings_pause_between_repeats">مکث بین تکرارها</string>
+    <string name="settings_seconds">%1$s ثانیه</string>
+    <string name="settings_repeat_count">تعداد تکرار پیش‌فرض</string>
+    <string name="repeat_unlimited">نامحدود</string>
+    <string name="settings_download_wifi">دانلود صوت فقط با Wi-Fi</string>
+    <string name="settings_section_reading">قرائت و اعلان</string>
+    <string name="settings_auto_scroll">پیمایش خودکار به آیه در حال پخش</string>
+    <string name="settings_haptics">بازخورد لمسی</string>
+    <string name="settings_notifications">اعلان‌ها</string>
+
+    <!-- Coming soon -->
+    <string name="coming_soon_title">در حال ساخت</string>
+    <string name="coming_soon_phase">این بخش در %1$s پیاده‌سازی می‌شود.</string>
+    <string name="phase_2">فاز ۲ (پخش‌کننده صوت)</string>
+    <string name="phase_3">فاز ۳ (حفظ)</string>
+    <string name="phase_4">فاز ۴ (تفسیر و جستجو)</string>
+    <string name="phase_5">فاز ۵ (محتوای سوره و فضائل)</string>
+    <string name="coming_soon_player">پخش آنلاین و آفلاین، چند قاری، سرعت ۱ تا ۲ برابر، تکرار آیه و بازه، و هم‌گامی دقیق با زمان‌بندی تأییدشده Quran.com.</string>
+    <string name="coming_soon_memorization">تکرار آیه یا بازه، پنهان‌سازی متن، مکث قابل تنظیم، هدف روزانه و ثبت پیشرفت.</string>
+    <string name="coming_soon_tafsir">تفسیر فارسی و انگلیسی آیه به آیه با ذکر منبع، و تفسیر صوتی هم‌گام.</string>
+    <string name="coming_soon_search">جستجو در متن عربی، ترجمه‌ها و تفسیر.</string>
+    <string name="coming_soon_virtues">روایات فضیلت سوره، تنها از منابع مستند و با تفکیک روایات معتبر از روایات محل اختلاف.</string>
+
+    <!-- Surah info -->
+    <string name="info_name">نام</string>
+    <string name="info_number">شماره سوره</string>
+    <string name="info_revelation">محل نزول</string>
+    <string name="info_verses">تعداد آیات</string>
+    <string name="info_juz">جزء</string>
+    <string name="info_pages">صفحات مصحف مدینه</string>
+    <string name="info_pages_value">%1$s تا %2$s</string>
+    <string name="info_source_note">داده‌های بالا از فراداده متن تنزیل استخراج شده‌اند. معرفی تاریخی و موضوعی سوره با ذکر منبع در فاز ۵ اضافه می‌شود.</string>
+
+    <!-- About / contact / other apps -->
+    <string name="about_body">«سوره واقعه» برنامه‌ای برای قرائت، شنیدن، حفظ و تدبر در این سوره است. متن قرآن از مجمع ملک فهد و تنزیل، و زمان‌بندی صوت از Quran.com گرفته شده است.</string>
+    <string name="about_sources_title">منابع محتوا</string>
+    <string name="about_sources_body">متن حفص: مجمع ملک فهد برای چاپ قرآن کریم\nرسم عثمانی و ترجمه‌ها: Tanzil.net\nزمان‌بندی آیات و صوت: Quran.com / QuranicAudio\nقلم‌ها: KFGQPC، Amiri و Vazirmatn</string>
+    <string name="about_version">نسخه %1$s</string>
+    <string name="contact_body">پیشنهادها و گزارش خطا را با ما در میان بگذارید.</string>
+    <string name="contact_email">support@example.com</string>
+    <string name="contact_send_email">ارسال ایمیل</string>
+    <string name="contact_email_subject">بازخورد برنامه سوره واقعه</string>
+    <string name="other_apps_empty_title">به‌زودی</string>
+    <string name="other_apps_empty_body">فهرست برنامه‌های دیگر ما اینجا نمایش داده می‌شود.</string>
+</resources>

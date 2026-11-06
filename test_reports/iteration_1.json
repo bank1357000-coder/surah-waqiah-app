@@ -1,0 +1,54 @@
+{
+  "summary": "Iteration 1 - static review only of the native Android project /app/android/WaqiahQuran. Nothing was compiled: there is no JDK, Gradle or Android SDK in this environment. Checks done: (1) Gradle, version catalog and plugin aliases; (2) XML well-formedness of the manifest and all res files; (3) asset JSON integrity and its match with the @Serializable models; (4) R.string, color, drawable, style and font references; (5) a heuristic import/unresolved-symbol scan over all 51 .kt files; (6) manual API-signature review of the DI, DB, DAO, seeder, repository, ViewModel, NavHost, PlaybackService, Reader, Home, Settings and VerseItem code. No definite compile errors were found. One fragile type inference was hardened. One data-quality issue was found: the Fooladvand translation uses Arabic Yeh and Kaf. There are a few minor robustness and UX notes. The Expo frontend was not touched, per the request.",
+  "backend_issues": {
+    "critical": [],
+    "minor": [
+      {"endpoint": "assets/quran/surah_56.json (fa.fooladvand)", "issue": "Fooladvand text uses Arabic Yeh U+064A (182 times) and Arabic Kaf U+0643 (54 times). Makarem and Ansarian use Persian U+06CC/U+06A9. This is inconsistent glyph shaping and will break Phase-4 Persian search unless the text is normalized."},
+      {"endpoint": "assets/quran/surah_56.json provenance.fetchedAt", "issue": "Value is '2026-06', a future date (now Jan 2026). Correct it to the real fetch date."},
+      {"endpoint": "WaqiahApp.kt:26", "issue": "appScope.launch { contentSeeder.ensureSeeded() } runs on SupervisorJob + Dispatchers.Default with no CoroutineExceptionHandler. Any seed failure (bad asset, validate() check failing, SQLite error) crashes the app process at startup. Add a handler or wrap it in runCatching and log; the repositories call ensureSeeded() again and surface the error state."},
+      {"endpoint": "ContentSeeder.kt:49-54", "issue": "needsSeeding() is based only on row counts. If bundled content is corrected in a later app version (translation typo fixes), existing installs never re-import it. Store a content version (DataStore or a meta table) and re-seed when the bundled version is higher."}
+    ]
+  },
+  "frontend_issues": {
+    "ui_bugs": [],
+    "integration_issues": [],
+    "design_issues": [
+      {"screen": "Reader (ReaderScreen.kt:70,83)", "issues": ["Top bar title is app_name, not the surah name (s.surah.nameFa / nameArabic)."]},
+      {"screen": "Reader error (ReaderViewModel.kt:97)", "issues": ["ReaderUiState.Error(it.message.orEmpty()) can show an empty or English technical message. Use a localized generic Persian string and keep the exception for logging."]},
+      {"screen": "Home (HomeViewModel.kt:36)", "issues": [".catch { emit(HomeUiState()) } silently swallows seeding/DB errors, so the hero card just shows blank surah info with no error or retry."]},
+      {"screen": "All Compose screens", "issues": ["testTag values are not exposed as resource-id for UiAutomator/Appium unless Modifier.semantics { testTagsAsResourceId = true } is set on the root. Consider adding it in WaqiahNavHost or MainActivity."]}
+    ],
+    "react_native_issues": []
+  },
+  "test_report_links": ["/app/backend/tests/test_android_static_assets.py", "/app/backend/tests/android_static_import_check.py", "/app/test_reports/pytest/pytest_results.xml"],
+  "action_items": [
+    "Normalize the fa.fooladvand texts in surah_56.json: Arabic Yeh U+064A to U+06CC and Arabic Kaf U+0643 to U+06A9. Do it in the asset, or in ContentSeeder for language=='fa'. Then add the same check to AssetIntegrityTest.",
+    "Add a CoroutineExceptionHandler (or runCatching plus Log) around the seeding call in WaqiahApp.onCreate so a seed failure cannot crash the app at startup.",
+    "Add a content-version check to ContentSeeder so corrected bundled content re-imports on app update.",
+    "Fix provenance.fetchedAt in surah_56.json (currently a future date, 2026-06).",
+    "Optional UX: show the surah name in the Reader top bar, use a localized error message, and give Home a visible error state.",
+    "Run './gradlew assembleDebug testDebugUnitTest lint' in a real Android Studio/JDK 17 environment. Static review cannot guarantee compilation, especially KSP (Hilt/Room) code generation and R8 release minification."
+  ],
+  "critical_code_review_comments": [
+    "Gradle: libs.versions.toml aliases all match their usages in app/build.gradle.kts and the root build.gradle.kts. AGP 8.7.3 + Gradle 8.11.1 + Kotlin 2.1.0 + KSP 2.1.0-1.0.29 + Hilt 2.54 + Room 2.6.1 (KSP) is a compatible set. The compose compiler plugin, serialization plugin and room schemaDirectory are configured correctly.",
+    "WorkManager on-demand init is correct: Configuration.Provider uses the 2.10 'override val workManagerConfiguration' property, and the manifest removes WorkManagerInitializer with tools:node=remove. The hilt-work and androidx.hilt compiler dependencies are present.",
+    "Navigation 2.8.5 type-safe routes are correct: @Serializable data objects/classes, composable<T>, navigate(route), and SavedStateHandle.toRoute<ReaderRoute>() in a HiltViewModel.",
+    "Room: 11 entities are registered and DAO queries match the table and column names. @Upsert and Flow return types are valid. Composite PKs lead with the FK columns, so the FKs are indexed. Migrations.ALL = emptyArray() with addMigrations(*ALL) compiles. Destructive migration is intentionally off.",
+    "Media3 1.5.1 PlaybackService: ExoPlayer.Builder.setAudioAttributes(attrs, true), setHandleAudioBecomingNoisy, setWakeMode, MediaSession.Builder.setSessionActivity, onGetSession and onTaskRemoved all match the API. The manifest has foregroundServiceType=mediaPlayback plus the FOREGROUND_SERVICE_MEDIA_PLAYBACK permission. POST_NOTIFICATIONS is declared but never requested at runtime (planned for Phase 2).",
+    "Material3 1.3 usage looks correct: CenterAlignedTopAppBar with OptIn, SingleChoiceSegmentedButtonRow/SegmentedButton with itemShape(index,count), AssistChip border as BorderStroke?, Surface(onClick), HorizontalDivider (not the deprecated Divider), and Icons.AutoMirrored for MenuBook/ArrowBack.",
+    "Heuristic symbol scan: every capitalized identifier in each .kt file is imported or declared in the same package. Modifier extensions (.background/.size/.width/.padding/.testTag) are all imported. All 1-arg/2-arg R.string references exist. Fonts are valid TTF files with valid resource names.",
+    "Assets match the SeedModels.kt @Serializable shapes exactly: 96 verses numbered 1..96 with non-blank Hafs and Tanzil text and no embedded verse digits or U+06DD. Juz is 27 and pages are 534-537. There are 4 translations of 96 non-empty lines each, and 5 reciters (ids 7,2,6,9,3) with 96 strictly monotonic, non-overlapping timings each.",
+    "Light theme (values/themes.xml) uses android:Theme.Material.Light.NoActionBar with transparent bars. That is fine because enableEdgeToEdge() sets the system-bar icon contrast."
+  ],
+  "updated_files": [
+    "/app/android/WaqiahQuran/app/src/main/java/com/alwaqiah/quran/presentation/reader/ReaderViewModel.kt (line 77: flowOf(emptyMap()) -> flowOf(emptyMap<Int, String>()) to make the elvis type inference explicit and avoid a possible inference failure)",
+    "/app/backend/tests/test_android_static_assets.py (new)",
+    "/app/backend/tests/android_static_import_check.py (new heuristic import scanner)"
+  ],
+  "success_rate": {"backend": "91% (10/11 static checks pass; failing: Persian Yeh/Kaf normalization in fa.fooladvand)", "frontend": "N/A (native Android, not runnable here; Expo frontend intentionally not tested)"},
+  "seed_data_creation": "None",
+  "retest_needed": false,
+  "should_main_agent_self_test": true,
+  "context_for_next_testing_agent": "There is no JDK, Gradle or Android SDK here, so only static checks are possible. Run 'pytest /app/backend/tests/test_android_static_assets.py' for XML, asset and string validation, and 'python3 /app/backend/tests/android_static_import_check.py' to flag unimported symbols (it prints only heuristic noise like 'constructor', 'emit', 'else' and property '.size' when clean). Do not test /app/frontend (Expo); it is unrelated to this native project.",
+  "rca_of_issue": "The Fooladvand edition comes from Tanzil/alquran.cloud, which publishes that edition with Arabic code points (U+064A/U+0643). The other two Persian editions use Persian code points. The text was bundled without normalization."
+}

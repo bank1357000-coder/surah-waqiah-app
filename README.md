@@ -1,4 +1,10 @@
-# expo
+
+# Surah Waqiah App (`surah-waqiah-app`)
+
+An open-source cross-platform application for reading, studying, and navigating Surah Al-Waqiah, built with an Expo / React Native / TypeScript frontend, a FastAPI + MongoDB backend, and an Android module (`android/WaqiahQuran`).
+
+---
+
 
 A small starter for a mobile app with a backend: **FastAPI with MongoDB**
 behind an **Expo + expo-router** app in strict TypeScript. The app runs as a
